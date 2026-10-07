@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+  var nama = prompt("Masukkan Nama:", "Andi");
+  var nilaiTugas = parseFloat(prompt("Masukkan Nilai Tugas:", "80"));
+  var nilaiUTS = parseFloat(prompt("Masukkan Nilai UTS:", "75"));
+  var nilaiUAS = parseFloat(prompt("Masukkan Nilai UAS:", "90"));
+
+  var nilaiAkhir = (nilaiTugas * 0.3) + (nilaiUTS * 0.3) + (nilaiUAS * 0.4);
+
+  var status = "TIDAK LULUS";
+  if (nilaiAkhir >= 75) {
+    status = "LULUS";
+  }
+
+  console.log("Nama : " + nama);
+  console.log("Nilai Akhir : " + nilaiAkhir);
+  console.log("Status : " + status);
+  document.write("<h2>Hasil Penilaian</h2>");
+  document.write("<p>Nama : " + nama + "</p>");
+  document.write("<p>Nilai Akhir : " + nilaiAkhir + "</p>");
+  document.write("<p>Status : " + status + "</p>");
+</script>
+
+</body>
+</html>
